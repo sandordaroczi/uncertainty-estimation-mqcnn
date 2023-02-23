@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "uncertainty-estimation-models-mqcnn"
+version = "0.1.0"
+description = "This library contains code for the MQCNN model for the uncertainty estimation project."
+authors = ["Sándor Daróczi, Jonas Flor, Florian Günther, Slava Kisilevich"]
+readme = "README.md"
+packages = [{ include = "uncertainty_estimation_mqcnn" }]
+
+[tool.poetry.dependencies]
+gluonts = "0.11.8"
+numpy = { version = "1.21.2", python = ">=3.8,<3.11" }
+pandas = "1.3.5"
+properscoring = "0.1"
+python = "^3.8"  # recommended version: 3.9.5
+scikit-learn = "1.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
