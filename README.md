@@ -1,23 +1,70 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Introduction
+
+This project contains the code for the paper titled
+"Evaluating algorithms for probabilistic forecasting and uncertainty estimation in regression problems".
+
+It contains the implementation of several uncertainty estimation models for application in a retail use-case,
+such as LightGBM, LightGBM Quantile Regressor, Bootstrapping, NGBoost, Probabilistic Gradient Boosting Machines (PGBM),
+Level Set Forecaster (LSF), Conformalized Regression, Temporal Fusion Transformer (TFT) and MQ-CNN.
+
+Moreover, under the notebooks folder you can find the python notebooks we used to train and evaluate our models on Kaggle datasets.
+The Kaggle datasets we used for the evaluation are the following:
+
+1. Blue Book For Bulldozers (bulldozer)
+2. Rossmann Store Sales (rossmann)
+3. Corporaci´on Favorita Grocery Sales Forecasting (favorita)
+
+For more details, read our paper here.
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+
+## 1. Installation
+
+Currently, the package installation can be done only via poetry.
+Read [here](https://python-poetry.org/docs/) about how to install and set up poetry on your local machine.
+
+After you have cloned the project and set up poetry, create a virtual environment and install packages from the pyproject.toml file via
+
+````commandline
+poetry update
+poetry install
+````
+
+Then, build the project using
+
+````commandline
+poetry build
+````
+
+After that, 
+
+````commandline
+pip install uncertainty_estimation_models_mqcnn-0.1.0-py3-none-any.whl
+````
+
+First, make sure you have separately installed the various dependencies (see below).
+
+### Dependencies
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+
+Navigate to the directory you want the git repo to live in, then run
+
+````commandline
+git clone https://github.com/daroczisandor/uncertainty-estimation-mqcnn.git
+cd uncertainty_estimation_mqcnn
+````
+
+Obtain data from Google Drive
+
+Store it in a folder called "datasets" at the top level of this repo
+(this is where the notebooks point to when reading data).
+
+Datasets can be found in Google Drive under this link:
+
+https://drive.google.com/drive/folders/1WV-z19PntL_PhDEwZbvPhI7WOZdxfYrO?usp=sharing
+
+
 
 # Contribute
 
-
-
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
