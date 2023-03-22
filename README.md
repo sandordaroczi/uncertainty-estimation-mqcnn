@@ -44,6 +44,10 @@ pip install uncertainty_estimation_models_mqcnn-0.1.0-py3-none-any.whl
 
 First, make sure you have separately installed the various dependencies (see below).
 
+For running the notebooks with CPU it is required to install the mxnet package via `pip install mxnet`. For GPU usage however the package mxnet-cu113 has to be installed via pip: `pip install mxnet-cu113`.
+
+The notebooks have only been tested to work on Windows 10 and MacOs 13+.
+
 ### Dependencies
 
 # Build and Test
